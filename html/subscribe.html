@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/logo.ico">
+    <title>M&T - Subscribe</title>
+
+    <link rel="stylesheet" href="../css/subscribe.css">
+</head>
+<body>
+
+    <!-- ALL IMAGE SOURCE AVAILABLE ON .DOCX FILE -->
+
+    <!-- HEADER -->
+
+    <div id="header">
+        <div class="header-content">
+            <!-- Header logo -->
+            <div class="logo">
+                <form action="../html/home.html">
+                    <input type="image" class="logo-header" src="../images/logo.png">
+                </form>
+            </div>
+            <!-- Search bar -->
+            <div class="search-bar-handler">
+                <form action="">
+                    <input type="text" class="search-bar">
+                    <input type="image" class="magnifier-btn" src="../images/magnifier.png">
+                </form>
+            </div>
+            <!-- Login Button and Icon -->
+            <div class="login">
+    
+                <a class="login-btn" href="">LOGIN</a>
+                <form action="">
+                    <input type="image" class="login-icon" src="../images/login-icon.png">
+                </form>
+            </div>
+        </div>
+        
+        <!-- Navbar menu -->
+        <div class="nav-menu-handler">
+            
+            <!-- nav-menu contain the menu given on the navbar -->
+            <div class="nav-menu">
+
+                <!-- HOME -->
+                <a class="drop-sub-menu" href="../html/home.html">HOME</a> 
+            </div>
+            <div class="nav-menu">
+                
+                <!-- CLOTHES / PRODUCT -->
+                <a class="drop-sub-menu" href="../html/product.html">PRODUCT</a>
+                <div class="drop-content">
+
+                    <!-- Menu description -->
+                    <div class="row0">
+
+                        <span class="sub-menu-title">OUR PRODUCT</span>
+                        <p class="sub-menu-intro">Explore your true style with
+                            the M&T newest collection.</p>
+                        <a class="discover-btn" href="../html/product.html">DISCOVER THIS SECTION</a>  
+                    
+                    </div>
+                    <!-- 1st row of dropdown submenu -->
+                    <div class="row1">
+
+                        <a class="drop-menu-title" href="">MEN</a>
+                        <a class="drop-menu" href="#">Tops</a>
+                        <a class="drop-menu" href="#">Bottoms</a>
+                        <a class="drop-menu" href="#">Shoes</a>
+                    </div>
+                    <!-- 2nd row of dropdown submenu -->
+                    <div class="row2">
+
+                        <a class="drop-menu-title-cs" href="#">WOMEN</a>
+                        <a class="drop-menu-cs" href="#">Tops</a>
+                        <a class="drop-menu-cs" href="#">Bottoms</a>
+                        <a class="drop-menu-cs" href="#">Shoes</a>
+                    </div>
+                    <!-- 3rd row of dropdown submenu -->
+                    <div class="row3">
+
+                        <a class="drop-menu-title-cs" href="#">KIDS</a>
+                        <a class="drop-menu-cs" href="#">Tops</a>
+                        <a class="drop-menu-cs" href="#">Bottoms</a>
+                        <a class="drop-menu-cs" href="#">Shoes</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ABOUT US -->
+            <div class="nav-menu">
+                
+                <a class="drop-sub-menu" href="../html/aboutus.html">ABOUT US</a>
+                <div class="drop-content">
+
+                    <div class="row0">
+
+                        <span class="sub-menu-title">ABOUT US</span>
+                        <p class="sub-menu-intro">Feel free to explore the beauty
+                            of M&T.</p>
+                        <a class="discover-btn" href="../html/aboutus.html">DISCOVER THIS SECTION</a>   
+                    </div>
+                    <div class="row1">
+
+                        <a class="drop-menu-title" href="#">FOR YOU</a>
+                        <a class="drop-menu" href="#">News</a>
+                        <a class="drop-menu" href="#">Events</a>
+                        <a class="drop-menu" href="#">M&T Collab</a>
+                    </div>
+                    <div class="row2">
+
+                        <a class="drop-menu-title" href="#">M&T THINGS</a>
+                        <a class="drop-menu" href="#">M&T History</a>
+                        <a class="drop-menu" href="#">M&T Designer</a>
+                        <a class="drop-menu" href="#">FAQ</a>
+                    </div>
+                    <div class="row3">
+
+                        <a class="drop-menu-title" href="#">CONTACT US</a>
+                        <a class="drop-menu" href="#">Customer Services</a>
+                        <a class="drop-menu" href="#">Social Media</a>
+                        <a class="drop-menu" href="#">Email</a>
+                    </div>
+                </div>
+            </div>
+            <!-- LOCATION -->
+            <div class="nav-menu">
+                
+                <a class="drop-sub-menu" href="../html/location.html">LOCATION</a>
+            </div>
+            <!-- SUBSCRIBE -->
+            <div class="nav-menu">
+                
+                <a class="drop-sub-menu" href="../html/subscribe.html">SUBSCRIBE</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+
+    <div class="content">
+
+        <!-- Content title -->
+        <div class="title-handler">
+
+            <img src="../images/duo.jpg" class="title-img" alt="">
+            <p class="title-img-text">SUBSCRIBE NOW!</p>
+        </div>
+
+        <div class="subs-handler">
+
+            <div class="subs-box">
+
+                <!-- Element on the left side -->
+                <div class="subs-element-left">
+
+                    <div class="left-handler">
+
+                        <!-- Form to handle user input, when submitted -> the value will be validated with javascript function -->
+                        <form action="" method="get" onsubmit="return validate()">
+
+                            <!-- Text form (1) -->
+                            <div class="input-box">
+                                <p class="input-type">First Name</p>
+                                <input type="text" name="first-name" id="first-name" class="input-form1">
+                                <!-- error message -> connected to the javascript -->
+                                <p id="error-first-name"></p>
+                            </div>
+
+                            <!-- Text form (1) -->
+                            <div class="input-box">
+                                <p class="input-type">Last Name</p>
+                                <input type="text" name="last-name" id="last-name" class="input-form1">
+                                <p id="error-last-name"></p>
+                            </div>
+
+                            <!-- Radio form (2) -->
+                            <div class="radio-box">
+
+                                <p class="input-type">Gender</p>
+
+                                <div class="radio-btn">
+                                    <input type="radio" name="gender" id="gender-male" class="radio-style">Male
+                                </div>
+
+                                <div class="radio-btn">
+                                    <input type="radio" name="gender" id="gender-female" class="radio-style">Female
+                                </div>
+
+                                <div class="radio-btn">
+                                    <input type="radio" name="gender" id="gender-rns" class="radio-style">Rather not say                                    
+                                </div>
+
+                                <p id="error-gender"></p>
+                            </div>
+
+                            <!-- Date form (3) -->
+                            <div class="date-box">
+
+                                <p class="input-type">Date of Birth</p>
+                                <input type="date" name="dob" id="dob" class="input-form1">
+                                <p id="error-dob"></p>
+                            </div>
+                            
+                            <!-- Dropdown select form (4) -->
+                            <div class="country-box">
+
+                                <p class="input-type">Country</p>
+                                <select name="country" id="place-country" class="input-form2">
+
+                                    <option value="0">Select a country</option>
+                                    <option value="1">Indonesia</option>
+                                    <option value="1">Australia</option>
+                                    <option value="1">Germany</option>
+                                    <option value="1">Malaysia</option>
+                                    <option value="1">Singapore</option>
+                                    <option value="1">United States</option>
+                                </select>
+                                
+                                <p id="error-country"></p>
+                            </div>
+
+                            <!-- Text form (1) -->
+                            <div class="input-box">
+                                <p class="input-type">Email</p>
+                                <input type="text" name="email" id="email" class="input-form1">
+                                <p id="error-email"></p>
+                            </div>
+
+                            <!-- Text form (1) -->
+                            <div class="input-box">
+                                <p class="input-type">Phone Number</p>
+                                <input type="text" name="phone" id="phone-number" class="input-form1">
+                                <select name="" id="phone-region">
+
+                                    <option value="">+62</option>
+                                    <option value="">+79</option>
+                                    <option value="">+32</option>
+                                    <option value="">+24</option>
+                                    <option value="">+18</option>
+                                </select>
+                                <p id="error-phone-number"></p>
+                            </div>
+                            
+                            <!-- Checkbox form (5) -->
+                            <label class="checkbox">
+
+                                <input type="checkbox" name="checkbox" id="checkbox-valid">
+                                <span class="checkbox-form"></span>
+                            </label>
+                            <p class="checkbox-text"> By clicking on this check-box, you are agree to M&T terms & conditions</p>
+
+                            
+
+                            <div class="submit-btn-handler">
+
+                                <!-- Submit Form (6) -->
+                                <input type="submit" value="SUBSCRIBE" class="submit-btn">
+                            </div>  
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Element on the right side -->
+                <div class="subs-element-right">
+
+                    <div class="right-handler">
+
+                        <!-- Logo for right element -->
+                        <div class="subs-logo">
+
+                            <img src="../images/logo-subs.png" class="subs-logo-img" alt="">
+                        </div>
+
+                        <div class="information-handler">
+
+                            <!-- Content inside right element -->
+                            <div class="information-box">
+
+                                <p class="information-title">Why M&T?</p>
+                                <p class="information-paragraph">M&T is committed and always tries to give the best to maintaining buyer satisfaction by providing the best services and clothes designs. M&T designers always have new breakthroughs in designs that are not boring and can be used anywhere, anytime. Hurry up and join our journey now.</p>
+                                
+                                <!-- Video -->
+                                <video src="../video/trailer.mp4" class="information-video" controls></video>
+
+                                <p class="information-title">Its Free!</p>
+                                <p class="information-paragraph">Subscribe to M&T news and information is free of charge. By subscribing, you can stay up to date on upcoming M&T events and collaborations, discount and promo, and many other things. Don't worry, you can unsubscribe anytime and anywhere. Come on, what are you waiting for! Join now!</p>
+                            
+                                <p class="information-title">Benefits</p>
+                                <ul class="benefit-list">
+                                    <li>Get the lastest news of M&T</li>
+                                    <li>Keep update on the newest M&T Collection</li>
+                                    <li>Get notifies when there is M&T Store nearby</li>
+                                    <li>Promo & Discount</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <!-- FOOTER - Shop menu -->
+            <div id="footer-shop" class="footer-content-margin">
+
+                <a class="fc-title" href="../html/product.html">SHOP</a>
+                <a class="fc-menu" href="../html/product.html">Men</a>
+                <a class="fc-menu-cs" href="">Women</a>
+                <a class="fc-menu-cs" href="">Kids</a>
+                <a class="fc-menu-cs" href="">Accesorries</a>
+                <a class="fc-menu-cs" href="">Collection</a>
+            </div>
+            <!-- FOOTER - Connect with us menu -->
+            <div id="footer-connectwu" class="footer-content-margin">
+                <a class="fc-title" href="">CONNECT WITH US</a>
+                <!-- scm-label for social media icon and text (LINK BUTTON) -->
+                <a class="scm-label" href="https://www.instagram.com/binusuniversityofficial/" target="blank">
+                    <span class="icon-bg">
+                        <img src="../images/Instagram.png" alt="">
+                    </span>
+                    <p class="scm-name">m&t.official</p>
+                </a>
+                <a class="scm-label" href="https://www.facebook.com/universitasbinanusantara" target="blank">
+                    <span class="icon-bg">
+                        <img src="../images/Facebook.png" alt="">
+                    </span>
+                    <p class="scm-name">M&T Worldwide</p>
+                </a>
+                <a class="scm-label" href="">
+                    <span class="icon-bg">
+                        <img src="../images/Message.png" alt="">
+                    </span>
+                    <p class="scm-name">mtworld@email.com</p>
+                </a>
+            </div>
+            <!-- FOOTER - Help menu -->
+            <div id="footer-help" class="footer-content-margin">
+
+                <a class="fc-title" href="">HELP</a>
+                <a class="fc-menu" href="">FAQ</a>
+                <a class="fc-menu" href="">Customer Services</a>
+                <a class="fc-menu" href="">M&T Membership</a>
+                <a class="fc-menu" href="">Accessibility</a>
+                <a class="fc-menu" href="">Store Locator</a>
+                <a class="fc-menu" href="">Legal & Privacy</a>
+            </div>
+            <!-- FOOTER - Subscription menu (DIRECT TO SAME PAGE -> SUBSCRIBE) -->
+            <div id="footer-subs" class="footer-content-margin">
+
+                <a class="fc-title" href="">SUBSCRIPTION</a>
+                <p class="stay-update">Stay up-to-date with our
+                    latest collection, promo,
+                    event, and many more.</p>
+                <a class="fc-subs-btn" href="../html/subscribe.html">SUBSCRIBE</a>
+            </div>
+        </div>
+
+        <!-- Copyright logo and text-->
+        <div class="copyright">
+            
+            <img src="../images/copyright.png" class="copyright-logo" alt="">
+            <p class="copy-text">COPYRIGHT M&T</p>
+        </div>
+    </footer>
+    
+</body>
+
+<script src="../js/subscribe.js"></script>
+
+</html>
